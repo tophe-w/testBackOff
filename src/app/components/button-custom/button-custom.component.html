@@ -1,0 +1,4 @@
+<button [disabled]="disabled || loading" [ngClass]="variant">
+  <span *ngIf="!loading"><ng-content /></span>
+  <span *ngIf="loading">Chargement...</span>
+</button>
