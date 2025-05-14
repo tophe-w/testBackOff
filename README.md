@@ -58,3 +58,13 @@ Angular CLI does not come with an end-to-end testing framework by default. You c
 
 For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
 # testBackOff
+
+
+## Alias de chemin
+
+Le chemin `@app/shared` est un alias vers le dossier `src/app/shared`, défini dans le fichier `tsconfig.json`.
+
+Cela permet d'importer plus proprement les composants ou utilitaires partagés, sans avoir à utiliser de chemins relatifs complexes :
+
+```ts
+import { MyComponent } from '@app/shared';

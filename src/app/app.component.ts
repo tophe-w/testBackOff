@@ -1,10 +1,12 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
-import { ButtonCustomComponent } from './components/button-custom/button-custom.component';
+import { ButtonCustomComponent } from './shared';
+
+
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, ButtonCustomComponent],
+  standalone: true,
+  imports: [ButtonCustomComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
 })
