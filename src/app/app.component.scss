@@ -1,0 +1,22 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: whitesmoke;
+}
+.layout {
+  display: flex;
+  height: 100vh;
+}
+
+app-side-bar {
+  flex-shrink: 0;
+  z-index: 1;
+}
+
+.content {
+  flex-grow: 1;
+  padding: 20px;
+  overflow: auto;
+}
